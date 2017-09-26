@@ -91,4 +91,4 @@ The shell that spawns using the `shell` command doesn't use a network connection
 So to carry out pure keyboard attacks, this kind of "covert channel" isn't needed, you can run them as soon as you SSH into P4wnP1s backdoor interface. But once the covert channel is up after issuing `FireStage1` there should be no need to run further keyboard attacks, as long as you know what you're doing. The input to the shell (and other spawned processes) is tunnelled through the HID channel.
 
 ### Where is the code for the client side payload?
-[[Here|https://github.com/mame82/P4wnP1_HID_backdoor_client]]
+[Here](https://github.com/mame82/P4wnP1_HID_backdoor_client)

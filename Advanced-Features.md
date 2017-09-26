@@ -5,7 +5,7 @@
 
 -   Keyboard payloads could be **triggered by targets main keyboard LEDs** (NUMLOCK, CAPSLOCK and SCROLLLOCK)
 -   **dynamic payload branching** based on LED triggers
--   Supports **DuckyScript** (see [hid_keyboard2.txt](payloads/hid_keyboard2.txt) payload for an advanced example)
+-   Supports **DuckyScript** (see [hid_keyboard2.txt](https://github.com/mame82/P4wnP1/tree/master/payloads/hid_keyboard2.txt) payload for an advanced example)
 -   Supports **raw ASCII Output via HID Keyboard** (could be used to print out character based files via keyboard, like `cat /var/log syslog | outhid`)
 -   **Multi Keyboard language layout support** (no need to worry about target language when using HID commands)
 -   Output starts when target keyboard driver is loaded (no need for manual delays, `onKeyboardUp` callback could be used in payloads)
@@ -22,7 +22,7 @@
 
 ### Advanced payload features
 
--   bash **payloads based on callbacks** (see [`template.txt`](payloads/template.txt) payload for details)
+-   bash **payloads based on callbacks** (see [`template.txt`](https://github.com/mame82/P4wnP1/tree/master/payloads/template.txt) payload for details)
     - **onNetworkUp** (when target host gets network link active)
 	- **onTargetGotIP** (if the target received an IP, the IP could be accessed from the payload script)
 	- **onKeyboardUp** (when keyboard driver installation on target has finished and keyboard is usable)
