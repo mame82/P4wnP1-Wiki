@@ -13,25 +13,25 @@ P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspber
 
 ### P4wnP1 Features
 
-* **HID covert channel [[Frontdoor|Frontdoor Payload]]/[[Backdoor|Backdoor Payload]]** | Get remote shell access to Windows targets via HID devices)
-* **[[Windows 10 Lockpicker|Windows 10 Lockpicker]]** | Unlock Windows boxes with weak passwords (fully automated)
-* **[[Stealing Browser Credentials|Stealing Browser Credentials]]** | Dumps stored Browser Credentials and copys them to the builtin flashdrive
-* **[[WiFi Hotspot|Wifi Hotspot]]** | SSH access (Pi Zero W only), supports hidden ESSID
-* **[[Client Mode|Wifi Client]]** | Relays USB net attacks over WiFi with internet access (MitM)
-* **[[USB device|Refrence??????????]]** | Works with Windows Plug and Play support
-	* Device Types:
-	* **HID covert channel communication device** | [[Frontdoor|Frontdoor Payload]]/[[Backdoor|Backdoor Payload]]
-	* **[[HID Keyboard/Mouse|Advanced Features#Advanced HID Features]]**
-	* **[[USB Mass storage|Advanced Features]]** | Currently only in demo setup with 128 Megabyte drive
-	* **[[RNDIS|Advanced Features#Advanced Network Features]]** | Windows Networking
-	* **[[CDC ECM|Advanced Features]]** | MacOS / Linux Networking
-* **[[Bash based payload scripts|Module development]]** | See `payloads/` subfolder for examples example
-* **[[Responder|Windows-10-Lockpicker#attack-chain-short-summary]]**
-* **[[John the Ripper Jumbo|Windows-10-Lockpicker#attack-chain-short-summary]]** | Pre-compiled version ready to go
-* **[[AutoSSH integration|AutoSSH]]** | For easy reverse ssh tunnels
-* **[[Auto attack|Refrence]]** | P4wnP1 automatically boots to standard shell if an OTG adapter is attached
-* **[[LED state feedback|Refrence]]** | with a simple bash command (`led_blink`)
-* **[[Advanced Features|Advanced Features]]**
+* **HID covert channel [Frontdoor](Payloads/Frontdoor-Payload.md)/[Backdoor](Payloads/Backdoor/Backdoor-Payload.md)** | Get remote shell access to Windows targets via HID devices)
+* **[Windows 10 Lockpicker](Payloads/Windows-10-Lockpicker.md)** | Unlock Windows boxes with weak passwords (fully automated)
+* **[Stealing Browser Credentials](Payloads/Stealing-Browser-Credentials.md)** | Dumps stored Browser Credentials and copys them to the builtin flashdrive
+* **[WiFi Hotspot](P4wnP1-W/Wifi-Hotspot.md)** | SSH access (Pi Zero W only), supports hidden ESSID
+* **[Client Mode](P4wnP1-W/Wifi-Client.md)** | Relays USB net attacks over WiFi with internet access (MitM)
+* **[USB device](Refrence??????????)** | Works with Windows Plug and Play support
+	- Device Types:
+	- **HID covert channel** [Frontdoor](Payloads/Frontdoor-Payload.md)/[Backdoor](Payloads/Backdoor/Backdoor-Payload.md)
+	- **[HID Keyboard/Mouse](Advanced-Features.md#advanced-HID-Features)**
+	- **[USB Mass storage](Advanced-Features)** | Currently only in demo setup with 128 Megabyte drive
+	- **[RNDIS](Advanced-Features#Advanced-Network-Features)** | Windows Networking
+	- **[CDC ECM](Advanced-Features#Advanced-Network-Features))** | MacOS / Linux Networking
+* **[Bash based payload scripts](Contributing/Module-development.md)** | See `payloads/` subfolder for examples example
+* **[Responder](Payloads/Windows-10-Lockpicker#attack-chain-short-summary)**
+* **[John-the-Ripper-Jumbo](Windows-10-Lockpicker#attack-chain-short-summary)** | Pre-compiled version ready to go
+* **[AutoSSH integration](AutoSSH)** | For easy reverse ssh tunnels
+* **[Auto attack](Refrence)** | P4wnP1 automatically boots to standard shell if an OTG adapter is attached
+* **[LED state feedback](Refrence)** | with a simple bash command (`led_blink`)
+* **[Advanced Features](Advanced Features)**
 
 ### Communication
 
@@ -57,17 +57,17 @@ Some days after initial P4wnP1 commit, Hak5's BashBunny was announced (and order
 | Network interface bitrate                                                       | Windows RNDIS: **2 GBit/s**</br>Linux/MacOS ECM: **100 MBit/s**</br>Real bitrate 450 MBit max (USB 2.0) | Windows RNDIS: **20 GBit/s**</br>Linux/MacOS ECM: **4 GBit/s** (detected as 1 GBit/s interface on MacOS)</br>Real bitrate 450 MBit max (USB 2.0)</br>[Here's the needed P4wnP1 patch](https://github.com/mame82/ratepatch)                                                                                                                                                                                                                                                                        |
 | LED indicator                                                                   | RGB Led, driven by single payload command                                                               | mono color LED, driven by a single payload command                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Customization                                                                   | Debian based OS with package manager                                                                    | Debian based OS with package manager                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| External network access via WLAN (relay attacks, MitM attacks, airgap bridging) | Not possible, no external interface                                                                     | supported with Pi Zero W                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | SSH access via **Bluetooth**                                                        | not possible                                                                                            | supported (Pi Zero W)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Connect to existing WiFi networks (headless)                                    | not possible                                                                                            | supported (Pi Zero W)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| External network access via WLAN (relay attacks, MitM attacks, airgap bridging) | Not possible, no external interface                                                                     | supported with Pi Zero W                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Shell **access via Internet**                                                       | not possible                                                                                            | supported (WiFi client connection + SSH remote port forwarding to SSH server owned by the pentester via AutoSSH)                                                                                                                                                                                                                                                                                                                                                                                  |
 | Ease of use                                                                     | Easy, change payloads based on USB drive, simple bash based scripting language                          | Medium, bash based event driven payloads, inline commands for HID (DuckyScript and ASCII keyboard printing, as well as LED control)                                                                                                                                                                                                                                                                                                                                                               |
-| Available payloads                                                              | Fast growing github repo (big community)                                                                |  Slowly growing github repo (spare time one man show ;-)) Edit: Growing community, but no payload contributions so far                                                                                                                                                                                                                                                                                                                                                                            |
 | In one sentence ...                                                             | "World's most advanced USB attack platform."                                                            | A open source project for the pentesting and red teaming community.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Total Costs of Ownership                                                        | about 99 USD                                                                                            | about 5 USD (11 USD fow WLAN capability with Pi Zero W)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 SumUp: BashBunny is directed to easy usage, but costs 20 times as much as the basic P4wnP1 hardware. P4wnP1 is directed to a more advanced user, but allows outbound communication on a separate network interface (routing and MitM traffic to upstream internet, hardware backdoor etc.)
 
+| Available payloads                                                              | Fast growing github repo (big community)                                                                |  Slowly growing github repo (spare time one man show ;-)) Edit: Growing community, but no payload contributions so far                                                                                                                                                                                                                                                                                                                                                                            |
 ### External Resources using P4wnP1
 
 -    Dan The IOT Man, Introduction + Install instructions "P4wnP1 – The Pi Zero based USB attack-Platform": [Dan the IOT Man]
@@ -75,17 +75,17 @@ SumUp: BashBunny is directed to easy usage, but costs 20 times as much as the ba
 -    ihacklabs[dot]com, tutorial "Red Team Arsenal – Hardware :: P4wnp1 Walkthrough" (Spanish): [part 1], [part 2], [part 3]
 
   [BHSXV]: https://www.madison-gurkha.com/hands-onhacking-raspberrypi-en
-  [part 1]: https://www.ihacklabs.com/es/red-team-arsenal-hardware-p4wnp1-walkthrough-cargando-y-disparando-con-la-raspberry-pi-zero-w-parte-1/
   [part 2]: https://www.ihacklabs.com/es/red-team-arsenal-hardware-p4wnp1-walkthrough-cargando-y-disparando-con-la-raspberry-pi-zero-w-parte-2/
   [part 3]: https://www.ihacklabs.com/es/red-team-arsenal-hardware-p4wnp1-walkthrough-cargando-y-disparando-con-la-raspberry-pi-zero-w-parte-3/
   [Dan the IOT Man]: https://dantheiotman.com/2017/09/15/p4wnp1-the-pi-zero-based-usb-attack-platform/
 
 ### Credits to
 
--    [[Seytonic|https://www.youtube.com/channel/UCW6xlqxSY3gGur4PkGPEUeA]], youtube channel on hacking and hardware projects
--    Rogan Dawes, Sensepost, core developer of Universal Serial Abuse - [[USaBUSe|https://github.com/sensepost/USaBUSe]]
--    Samy Kamkar, [[PoisonTap|https://github.com/samyk/poisontap]]
--    Rob ‘[[MUBIX|https://github.com/mubix]]’ Fuller, [[“Snagging creds from locked machines”|https://room362.com/post/2016/snagging-creds-from-locked-machines/]]
--    Laurent Gaffie (lgandx), [[Responder|https://github.com/lgandx/Responder]]
--    Darren Kitchen (hak5darren), [[DuckEncoder| https://github.com/hak5darren/USB-Rubber-Ducky/]], time to implement a WiFi capable successor for BashBunny ;-)
+-    [Seytonic](https://www.youtube.com/channel/UCW6xlqxSY3gGur4PkGPEUeA), youtube channel on hacking and hardware projects
+-    Rogan Dawes, Sensepost, core developer of Universal Serial Abuse - [USaBUSe](https://github.com/sensepost/USaBUSe)
+-    Samy Kamkar, [PoisonTap](https://github.com/samyk/poisontap)
+-    Rob ‘[MUBIX](https://github.com/mubix)’ Fuller, [“Snagging creds from locked machines”](https://room362.com/post/2016/snagging-creds-from-locked-machines/)
+-    Laurent Gaffie (lgandx), [Responder](https://github.com/lgandx/Responder)
+-    Darren Kitchen (hak5darren), [DuckEncoder]( https://github.com/hak5darren/USB-Rubber-Ducky/), time to implement a WiFi capable successor for BashBunny ;-)
+[part 1]: https://www.ihacklabs.com/es/red-team-arsenal-hardware-p4wnp1-walkthrough-cargando-y-disparando-con-la-raspberry-pi-zero-w-parte-1/
 -    All of the Github supporters
