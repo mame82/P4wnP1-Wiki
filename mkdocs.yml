@@ -4,5 +4,5 @@ edit_uri: edit/master
 
 
 pages:
-	- 'Home' : 'README.md'
-	- 'TODO'
+ - 'Home' : 'README.md'
+ - 'TODO'
