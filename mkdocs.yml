@@ -18,7 +18,7 @@ pages:
   - Frontdoor: 'Payload-Subfolder/Frontdoor-Payload.md'
   - 'Windows 10 Lockpicker': 'Payload-Subfolder/Windows-10-Lockpicker.md'
   - 'Stealing Browser Credentials': 'Payload-Subfolder/Stealing-Browser-Credentials.md'
-- 'OS Independent features': 'OS-Independent-features-Subfolder/OS-independent-features-Home.md'
+- 'OS Independent features': 'OS-independent-features-Subfolder/OS-independent-features-Home.md'
 - 'P4wnP1 W exclusive features':
   - Overview: 'P4wnP1-W/RasPi0-W-Home.md'
   - 'Wifi Hotspot': 'P4wnP1-W/Wifi-Hotspot.md'
