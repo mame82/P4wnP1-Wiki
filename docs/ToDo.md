@@ -2,7 +2,7 @@
 
 * Proofreading of the entire Wiki (grammar, information correct?) (task for a native speaker)
 * Further documentation on Contributing
-* [Wifi Hotspot]]
+* [Wifi Hotspot](P4wnP1-W/Wifi-Hotspot.md)
 * [ToDo about the process of contributing](Contributing/Other-ways-to-contribute.md)
 * [add WPAD_ENTRY explanation](Getting-Started/Setup.cfg.md)
 * [setup process for AutoSSH](P4wnP1-W/AutoSSH.md)

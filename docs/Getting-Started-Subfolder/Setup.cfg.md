@@ -53,6 +53,8 @@ _Note:_ P4wnP1 needs internet connectivity and ipv4-forwarding enabled so reques
 ### **WPAD_ENTRY**
 TODO
 
+## WIFI
+
 ***
 ### **WIFI_REG**
 **defines the WiFi regulatory domain**  
@@ -108,4 +110,45 @@ gets overridden in most payloads; so be aware that the language might got reset 
 calls callback 'onKeyboardUp' afterwards; mostly there to provide a default if not set explicitly in payload.
 
 ***
-Feel free to write the AutoSSH part. I'll have to do some research until I'll be able to write documentation on that.
+## AutoSSH
+
+### **AUTOSSH_ENABLED**
+**defines if AUTOSSH reachback is enabled**
+if enabled P4wnP1 will continuously try to bring up a SSH connection tunneling out its internal SSH server to a remote SSH Server
+### **AUTOSSH_REMOTE_HOST**
+**host address of the remote SSH server**
+Should be a hostname like "_YourSSH-server.com_"
+### **AUTOSSH_REMOTE_USER**
+**valid user of the remote SSH server**
+passwordless login has to be possible with the key given by AUTOSSH_PRIVATE_KEY
+### **AUTOSSH_PRIVATE_KEY**
+**path to private key used to login to the remote server**
+(has to be present in ~/.ssh/authorized_keys file of AUTOSSH_REMOTE_USER)
+### **AUTOSSH_PUBLIC_KEY**
+**path to public key**
+this key has to be present in ~/.ssh/authorized_keys file of AUTOSSH_REMOTE_USER (use ./ssh/pushkey.sh to assist)
+### **AUTOSSH_REMOTE_PORT**
+**port number**
+P4wnP1's SSH shell will be reachable at this port on the remote SSH server (the port is bound to localhost and thus not exposed to public facing IP)
+
+
+***
+## Bluetooth
+
+**Note:** Connecting Bluetooth Network Access Point (NAP) with a mobile device
+requires to disable other networks with internet access on this device in most cases (like WiFi).
+NAP provided by P4wnP1 doesn't necessarily provide Internet access, but is used to grant network access on P4wnP1 via bluetooth. The alternative would be to establish a "Group Network (GN)" instead of NAP, which unfortunately didn't work in most test cases, when it cames to connection of a mobile device.
+So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose of P4wnP1), P4wnP1 itself has to be connected to Internet (for example using RNDIS + ICS on windows or using the WiFi client mode). Additionally iptables rules have to be deployed to enable MASQUERADING on the respective outbound interface.
+
+To summerize: P4wnP1 provides NAP as access option to SSH via bluetooth, not to serve Internet, although this could be achieved.
+
+### BLUETOOTH_NAP=
+Enable Bluetooth NAP to SSH in via Bluetooth
+### BLUETOOTH_NAP_PIN=1337
+unused, PIN authentication currently not working (custom agent for bluez 5 needed)
+### BLUETOOTH_NAP_IP
+IP used by P4wnP1
+### BLUETOOTH_NAP_NETMASK
+Mandantory Netmask
+### BLUETOOTH_NAP_DHCP_RANGE
+DHCP Server IP Range
