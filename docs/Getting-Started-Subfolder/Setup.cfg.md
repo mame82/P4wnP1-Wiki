@@ -120,9 +120,9 @@ So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose o
 
 To summerize: P4wnP1 provides NAP as access option to SSH via bluetooth, not to serve Internet, although this could be achieved.
 
-### BLUETOOTH_NAP=
+### BLUETOOTH_NAP
 Enable Bluetooth NAP to SSH in via Bluetooth
-### BLUETOOTH_NAP_PIN=1337
+### BLUETOOTH_NAP_PIN
 unused, PIN authentication currently not working (custom agent for bluez 5 needed)
 ### BLUETOOTH_NAP_IP
 IP used by P4wnP1
