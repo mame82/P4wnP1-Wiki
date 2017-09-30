@@ -4,7 +4,7 @@ edit_uri: edit/master
 theme: readthedocs
 
 pages:
-- Home: 'README.md'
+- Home: 'index.md'
 - FAQ: 'FAQ.md'
 - Getting Started:
   - Installation: 'Getting-Started-Subfolder/Installation.md'
