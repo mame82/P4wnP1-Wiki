@@ -39,29 +39,22 @@ docs/
   FAQ.md
   Troubleshooting.md
   Advanced-Features.md
-  Getting-Started-Subfolder/
-    Installation.md
-    Getting-Started.md
-    Setup.cfg.md
-  Payload-Subfolder/
-    Payload-Home.md
-    Windows-10-Lockpicker.md
-    Stealing-Browser-Credentials.md
-    Frontdoor-Payload.md
-    Backdoor-Subfolder/
-      Backdoor-Payload.md
-      Backdoor-Commands.md
-  OS-Independent-features-Subfolder/
-    OS-independent-features-Home.md
-  P4wnP1-W/
-    RasPi0-W-Home.md
-    Wifi-Hotspot.md
-    Wifi-Client.md
-    Bluetooth-Connectivity.md
-    AutoSSH.md
-  Contributing-Subfolder/
-    Contributing-Home.md
-    Module-development.md
-    Other-Ways-to-Contribute.md
-
+  Getting-Started-Subfolder/Installation.md
+  Getting-Started-Subfolder/Getting-Started.md
+  Getting-Started-Subfolder/Setup.cfg.md
+  Payload-Subfolder/Payload-Home.md
+  Payload-Subfolder/Windows-10-Lockpicker.md
+  Payload-Subfolder/Stealing-Browser-Credentials.md
+  Payload-Subfolder/Frontdoor-Payload.md
+  Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md
+  Payload-Subfolder/Backdoor-Subfolder/Backdoor-Commands.md
+  OS-Independent-features-Subfolder/OS-independent-features-Home.md
+  P4wnP1-W/RasPi0-W-Home.md
+  P4wnP1-W/Wifi-Hotspot.md
+  P4wnP1-W/Wifi-Client.md
+  P4wnP1-W/Bluetooth-Connectivity.md
+  P4wnP1-W/AutoSSH.md
+  Contributing-Subfolder/Contributing-Home.md
+  Contributing-Subfolder/Module-development.md
+  Contributing-Subfolder/Other-Ways-to-Contribute.md
   ToDo.md
