@@ -1,10 +1,10 @@
 # Contributing
 First of all: Thank you very much for thinking about contributing to the P4wnP1 project.
-There are several tasks that need to be done, even some for people that are [not software developers](../Contributing/Other-Ways-to-Contribute.md).
+There are several tasks that need to be done, even some for people that are [not software developers](Other-Ways-to-Contribute.md).
 
 Here are some places where you can find some suggestions:
-* [Github issue page](https://github.com/mame82/P4wnP1/issues)
-* [Mame's ToDo list](https://github.com/mame82/P4wnP1/tree/master/todo.txt)
+* [P4wnP1 issue page](https://github.com/mame82/P4wnP1/issues)
+* [Wiki issue page](https://github.com/mame82/P4wnP1-Wiki/issues)
 * [The Wikis ToDo list](ToDo.md)
 
 ## How do I contribute?
