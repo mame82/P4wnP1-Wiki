@@ -1,3 +1,67 @@
 site_name: P4wnP1 Official Wiki
 repo_url: https://github.com/mame82/P4wnP1
 edit_uri: edit/master
+theme: readthedocs
+docs_dir: '/'
+
+pages:
+- Home: 'README.md'
+- FAQ: 'FAQ.md'
+- Getting Started:
+  - Installation: 'Getting-Started-Subfolder/Installation.md'
+  - 'Getting Started': 'Getting-Started-Subfolder/Getting-Started.md'
+  - Setup.cfg: 'Getting-Started-Subfolder/Setup.cfg.md'
+- Payloads:
+  - Overview: 'Payload-Subfolder/Payload-Home.md'
+  - Backdoor:
+    - Payload: 'Payload-Subfolder/Backdoor-Payload.md'
+    - 'Commandline Interface': 'Payload-Subfolder/Backdoor-Commands.md'
+  - Frontdoor: 'Payload-Subfolder/Frontdoor-Payload.md'
+  - 'Windows 10 Lockpicker': 'Payload-Subfolder/Windows-10-Lockpicker.md'
+  - 'Stealing Browser Credentials': 'Payload-Subfolder/Stealing-Browser-Credentials.md'
+- 'OS Independent features': 'OS-Independent-features-Subfolder/OS-independent-features-Home.md'
+- 'P4wnP1 W exclusive features':
+  - Overview: 'P4wnP1-W/RasPi0-W-Home.md'
+  - 'Wifi Hotspot': 'P4wnP1-W/ifi-Hotspot.md'
+  - 'Wifi Client': 'P4wnP1-W/Wifi-Client.md'
+  - 'Bluetooth': 'P4wnP1-W/Bluetooth-Connectivity.md'
+  - 'Reverse SSH tunnel': 'P4wnP1-W/AutoSSH.md'
+- Troubleshooting: 'Troubleshooting.md'
+- Contributing:
+    - Contributing: 'Contributing-Subfolder/Contributing-Home.md'
+    - 'Payload Development': 'Contributing-Subfolder/Module-development.md'
+    - 'Other ways to Contribute': 'Contributing-Subfolder/Other-Ways-to-Contribute.md'
+- 'Wiki TODO list': 'ToDo.md'
+
+
+mkdocs.yml
+README.md
+FAQ.md
+Troubleshooting.md
+Advanced-Features.md
+Getting-Started-Subfolder/
+  Installation.md
+  Getting-Started.md
+  Setup.cfg.md
+Payload-Subfolder/
+  Payload-Home.md
+  Windows-10-Lockpicker.md
+  Stealing-Browser-Credentials.md
+  Frontdoor-Payload.md
+  Backdoor-Subfolder/
+    Backdoor-Payload.md
+    Backdoor-Commands.md
+OS-Independent-features-Subfolder/
+  OS-independent-features-Home.md
+P4wnP1-W/
+  RasPi0-W-Home.md
+  Wifi-Hotspot.md
+  Wifi-Client.md
+  Bluetooth-Connectivity.md
+  AutoSSH.md
+Contributing-Subfolder/
+  Contributing-Home.md
+  Module-development.md
+  Other-Ways-to-Contribute.md
+
+ToDo.md
