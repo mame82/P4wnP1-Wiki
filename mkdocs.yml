@@ -13,19 +13,20 @@ pages:
 - Payloads:
   - Overview: 'Payload-Subfolder/Payload-Home.md'
   - Backdoor:
-    - Payload: 'Payload-Subfolder/Backdoor-Payload.md'
-    - 'Commandline Interface': 'Payload-Subfolder/Backdoor-Commands.md'
+    - Payload: 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md'
+    - 'Commandline Interface': 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Commands.md'
   - Frontdoor: 'Payload-Subfolder/Frontdoor-Payload.md'
   - 'Windows 10 Lockpicker': 'Payload-Subfolder/Windows-10-Lockpicker.md'
   - 'Stealing Browser Credentials': 'Payload-Subfolder/Stealing-Browser-Credentials.md'
 - 'OS Independent features': 'OS-Independent-features-Subfolder/OS-independent-features-Home.md'
 - 'P4wnP1 W exclusive features':
   - Overview: 'P4wnP1-W/RasPi0-W-Home.md'
-  - 'Wifi Hotspot': 'P4wnP1-W/ifi-Hotspot.md'
+  - 'Wifi Hotspot': 'P4wnP1-W/Wifi-Hotspot.md'
   - 'Wifi Client': 'P4wnP1-W/Wifi-Client.md'
   - 'Bluetooth': 'P4wnP1-W/Bluetooth-Connectivity.md'
   - 'Reverse SSH tunnel': 'P4wnP1-W/AutoSSH.md'
 - Troubleshooting: 'Troubleshooting.md'
+- 'Advanced Features': 'Advanced-Features.md'
 - Contributing:
     - Contributing: 'Contributing-Subfolder/Contributing-Home.md'
     - 'Payload Development': 'Contributing-Subfolder/Module-development.md'
