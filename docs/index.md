@@ -2,8 +2,6 @@
 ***
 *DISCLAIMER*
 
-Most of the information here has been taken directly from the P4wnP1 Githib page. In the near future, I will go through every page and make the formatting and wording similar throughout the wiki as well as try to make it a bit easier to understand (for the not-so-advanced users).
-
 _This wiki is a HUGE work in progress just like the P4wnP1 project itself. The info here comes from FAQ.md, README.md, and many issues in the original project. Keep in mind this block of text won't be here forever (hopefully)._
 ***
 # About P4wnP1

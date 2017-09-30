@@ -19,6 +19,19 @@ This repo uses the default github-webinterface characters for styling
 * `_text_` italic
 * `[display-name](page-name.md)` internal link
 
+**Note:** internal links use relative links instead of absolute.
+Use `../` to access the parent directory. So if you have this directory structure,
+```
+├── Backdoor-Subfolder
+│   ├── Backdoor-Commands.md (the file you are editing)
+│   └── Backdoor-Payload.md
+├── Frontdoor-Payload.md
+├── Payload-Home.md
+├── Stealing-Browser-Credentials.md
+└── Windows-10-Lockpicker.md (the file you want to link to)
+```
+you use `[<text to display>](../Windows-10-Lockpicker.md)` to link to Windows-10-Lockpicker.md
+
 ### youtube videos
 Since raw html in markdown documents is not recommended and filtered by some backends the prefered style is adding the thumbnail with the link to the video like so:
 This can be done with the following syntax:  
