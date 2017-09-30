@@ -18,7 +18,7 @@ Available callbacks are (listed by their usual sequence of execution:
 In addition to having the freedom of bash and 3rd party tools, P4wnP1 comes also in equipped with various functions to interface with its USB-Gadget abilities:
 _(some of these are only available through the payload)_
 * `duckhid`,`outhid` & `mousescript`  
-  Detailed description [here](OS-Independent-features/OS-independent-features-Home.md)
+  Detailed description [here](../OS-Independent-features/OS-independent-features-Home.md)
 * `led_blink`  
   Usage: `led_blink <blink amount>`  
   Causes the Pi's onboard Led to blink <blink amount> times.  
@@ -40,7 +40,7 @@ _(some of these are only available through the payload)_
 * `WIFI_CLIENT_CONNECTION_SUCCESS` _bool_  
   determines if connecting as a wifi client went successful  
 **Note:** These are supposed to be read-only and only accessible inside the callbacks since this might cause unexpected behavior in the boot process!
-* **Every setting in [setup.cfg](Getting-Started/Setup.cfg.md)**
+* **Every setting in [setup.cfg](../Getting-Started/Setup.cfg.md)**
   these are supposed to be overridden **outside** the callback functions, not during the boot process
 
 ### Styleguide

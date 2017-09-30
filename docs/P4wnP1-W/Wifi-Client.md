@@ -3,7 +3,7 @@ P4wnP1 starts an Accesspoint by default. Which is desired on most cases when on 
 1. Easy update of P4wnP1 and Raspbian.
 2. Forwarding requests from the target machine.
 3. Extending the wifi distance by using a stronger accesspoint as router
-4. [AutoSSH integration](P4wnP1-W/AutoSSH.md) for automatic reverse connections.
+4. [AutoSSH integration](AutoSSH.md) for automatic reverse connections.
 
 The client setting can be configured in the `setup.cfg` in the P4wnP1 root directory:
 
@@ -16,4 +16,4 @@ The client setting can be configured in the `setup.cfg` in the P4wnP1 root direc
 **Note:**  
 Currently only supports WPA2 PSK networks. Enterprise networks might be difficult to debug if you dont have on so you have to write your own implementation. [related issue](https://github.com/mame82/P4wnP1/issues/106)
 Could slow down boot because the scan for the desired network is issued upfront and the DHCP client gets started and waits for a lease.  
-if [WIFI_ACCESSPOINT](P4wnP1-W/Wifi-Hotspot.md) is set to true as well, P4wnP1 starts an Accesspoint if the target network was not found.
+if [WIFI_ACCESSPOINT](Wifi-Hotspot.md) is set to true as well, P4wnP1 starts an Accesspoint if the target network was not found.
