@@ -35,10 +35,8 @@ you use `[<text to display>](../Windows-10-Lockpicker.md)` to link to Windows-10
 ### Python-Markdown extensions
 This Wiki uses a couple of extensions supported by [material](https://squidfunk.github.io/mkdocs-material/):
 #### TOC
-If you add a new page to the Wiki, it will only show up in the sidebar if you add it in `mkdocs.yml`.
-```yaml
+If you add a new page to the Wiki, it will only show up in the sidebar if you add it in `mkdocs.yml` at the correct spot.
 
-```
 
 ### youtube videos
 Since raw html in markdown documents is not recommended and filtered by some backends the prefered style is adding the thumbnail with the link to the video like so:
