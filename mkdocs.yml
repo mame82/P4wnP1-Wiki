@@ -7,7 +7,10 @@ markdown_extensions:
   - admonition
   - codehilite
   - toc(permalink=true)
-
+  - pymdown-extensions.details
+  - pymdown-extensions.tasklist
+  - pymdown-extensions.inlinehilite
+  - pymdown-extensions.keys
 
 pages:
 - Home: 'index.md'
