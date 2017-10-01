@@ -19,8 +19,9 @@ This repo uses the default github-webinterface characters for styling
 * `_text_` italic
 * `[display-name](page-name.md)` internal link
 
-**Note:** internal links use relative links instead of absolute.
-Use `../` to access the parent directory. So if you have this directory structure,
+!!! note
+    internal links use relative links instead of absolute.
+    Use `../` to access the parent directory. So if you have this directory structure,
 ```
 ├── Backdoor-Subfolder
 │   ├── Backdoor-Commands.md (the file you are editing)

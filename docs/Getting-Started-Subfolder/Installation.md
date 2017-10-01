@@ -77,13 +77,16 @@ P4wnP1 setup is meant to be run by the user `pi` so use this user, the default p
 ### Install P4wnP1
 
 Enter the following commands to install P4wnP1:
-
+``` sh
     sudo apt-get -y install git
     cd /home/pi
     git clone --recursive https://github.com/mame82/P4wnP1
     cd P4wnP1
     ./install.sh
-**Note: the `--recursive` is very important, the installation will fail if omitted**
+```
+!!! warning
+    the `--recursive` is very important, the installation will fail if omitted**
+
 The setup process will take some time (installing packages, compiling pycrypto), so go and have a coffee.
 If something goes wrong you should receive some error message.
 

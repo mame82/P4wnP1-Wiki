@@ -9,7 +9,8 @@ The Payload gets loaded directly afterwards and **has the ability to override va
 ### **USB_VID**
 **defines the USB-VendorID**  
 Can be any 4-digit hexadecimal number, but if you want the Pi to like a certain device, you can look up VIDs by name at [the-sz.com](http://www.the-sz.com/products/usbid/).  
-_Note:_ Mac OS only plug'n'plays Apple accessories. So you should change the VID to `0x05ac` if you plan on using the P4wnP1 only Apple devices.
+!!! info
+    Mac OS only plug'n'plays Apple accessories. So you should change the VID to `0x05ac` if you plan on using the P4wnP1 only Apple devices.
 ### **USB_PID**
 **defines the USB-ProductID**  
 Can be any 4-digit hexadecimal number.  
@@ -21,7 +22,8 @@ can be either true or false
 ### **USE_RNDIS**
 **defines if the Pi should act as ethernet adapter on Windows machines**  
 can be either true or false  
-_Note:_ Since P4wnP1 is limited to USB 2.0 speeds, the reported internet speed is only 450 Mbit/s max.
+!!! info
+    Since P4wnP1 is limited to USB 2.0 speeds, the reported internet speed is only 450 Mbit/s max.
 You can use [this](https://github.com/mame82/ratepatch#bitrate-patch-for-p4wnp1) kernel Patch to maximize reported Internet speeds to 20Gbit/s (RNDIS) and 4Gbit/s (ECM)
 ### **USE_HID**
 **defines if the Pi should act as keyboard.**  
@@ -35,7 +37,7 @@ Used for bidirectional communication between P4wnP1 and Backdoor-Agent.
 ### **USE_UMS**
 **defines if the pi should act as a mass storage unit**  
 can be either true or false  
-_Note:_ currently only 128MB capacity.
+!!! note "currently only 128MB capacity."
 
 ***
 ## Wired Network
@@ -48,7 +50,8 @@ _Note:_ currently only 128MB capacity.
 
 ### **ROUTE_SPOOF**
 **defines the traffic from the target should be routed through P4wnP1**  
-_Note:_ P4wnP1 needs internet connectivity and ipv4-forwarding enabled so requests go through.
+!!! info
+    P4wnP1 needs internet connectivity and ipv4-forwarding enabled so requests go through.
 
 ### **WPAD_ENTRY**
 TODO
@@ -113,10 +116,10 @@ calls callback 'onKeyboardUp' afterwards; mostly there to provide a default if n
 ***
 ## Bluetooth Network
 
-_Note:_ Connecting Bluetooth Network Access Point (NAP) with a mobile device
-requires to disable other networks with internet access on this device in most cases (like WiFi).
-NAP provided by P4wnP1 doesn't necessarily provide Internet access, but is used to grant network access on P4wnP1 via bluetooth. The alternative would be to establish a "Group Network (GN)" instead of NAP, which unfortunately didn't work in most test cases, when it cames to connection of a mobile device.
-So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose of P4wnP1), P4wnP1 itself has to be connected to Internet (for example using RNDIS + ICS on windows or using the WiFi client mode). Additionally iptables rules have to be deployed to enable MASQUERADING on the respective outbound interface.
+???+ warning
+  Connecting Bluetooth Network Access Point (NAP) with a mobile device requires to disable other networks with internet access on this device in most cases (like WiFi).
+  NAP provided by P4wnP1 doesn't necessarily provide Internet access, but is used to grant network access on P4wnP1 via bluetooth. The alternative would be to establish a "Group Network (GN)" instead of NAP, which unfortunately didn't work in most test cases, when it cames to connection of a mobile device.
+  So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose of P4wnP1), P4wnP1 itself has to be connected to Internet (for example using RNDIS + ICS on windows or using the WiFi client mode). Additionally iptables rules have to be deployed to enable MASQUERADING on the respective outbound interface.
 
 To summerize: P4wnP1 provides NAP as access option to SSH via bluetooth, not to serve Internet, although this could be achieved.
 
