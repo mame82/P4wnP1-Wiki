@@ -1,7 +1,7 @@
 site_name: P4wnP1 Official Wiki
 repo_url: https://github.com/mame82/P4wnP1
 edit_uri: edit/master
-theme: readthedocs
+theme_dir: readthedocshm
 
 pages:
 - Home: 'index.md'
