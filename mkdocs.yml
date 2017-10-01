@@ -3,6 +3,11 @@ repo_url: https://github.com/mame82/P4wnP1
 edit_uri: edit/master
 theme_dir: 'mkdocs-material/material'
 
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc(permalink=true)
+
 pages:
 - Home: 'index.md'
 - FAQ: 'FAQ.md'
