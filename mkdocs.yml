@@ -4,12 +4,6 @@ edit_uri: edit/master
 theme_dir: 'mkdocs-material/material'
 theme: material
 
-markdown_extensions:
-  - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=true)
-
-
 pages:
 - Home: 'index.md'
 - FAQ: 'FAQ.md'
