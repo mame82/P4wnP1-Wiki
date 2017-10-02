@@ -10,7 +10,7 @@ The Payload gets loaded directly afterwards and **has the ability to override va
 
 ## Gadgets
 
-### USB_VID**
+### USB_VID
 **defines the USB-VendorID**  
 Can be any 4-digit hexadecimal number, but if you want the Pi to like a certain device, you can look up VIDs by name at [the-sz.com](http://www.the-sz.com/products/usbid/).  
 !!! info
