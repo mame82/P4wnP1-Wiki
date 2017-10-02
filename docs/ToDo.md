@@ -15,3 +15,4 @@
 * [ ] add [InlineHilite](https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
 * [ ] PyMdown-Tasklist
 * [ ] Add doc for pymdown-Extensions in [Other-ways-to-Contribute.md](Contributing-Subfolder/Other-ways-to-Contribute.md)
+* [ ] add doc on testing the wiki locally via mkdocs.
