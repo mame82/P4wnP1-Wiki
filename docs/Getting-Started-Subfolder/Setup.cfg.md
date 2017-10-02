@@ -37,7 +37,8 @@ Used for bidirectional communication between P4wnP1 and Backdoor-Agent.
 ### **USE_UMS**
 **defines if the pi should act as a mass storage unit**  
 can be either true or false  
-!!! note "currently only 128MB capacity."
+!!! note
+    currently only 128MB capacity.
 
 ***
 ## Wired Network
@@ -117,21 +118,21 @@ calls callback 'onKeyboardUp' afterwards; mostly there to provide a default if n
 ## Bluetooth Network
 
 ???+ warning
-  Connecting Bluetooth Network Access Point (NAP) with a mobile device requires to disable other networks with internet access on this device in most cases (like WiFi).
-  NAP provided by P4wnP1 doesn't necessarily provide Internet access, but is used to grant network access on P4wnP1 via bluetooth. The alternative would be to establish a "Group Network (GN)" instead of NAP, which unfortunately didn't work in most test cases, when it cames to connection of a mobile device.
-  So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose of P4wnP1), P4wnP1 itself has to be connected to Internet (for example using RNDIS + ICS on windows or using the WiFi client mode). Additionally iptables rules have to be deployed to enable MASQUERADING on the respective outbound interface.
+      Connecting Bluetooth Network Access Point (NAP) with a mobile device requires to disable other networks with internet access on this device in most cases (like WiFi).
+      NAP provided by P4wnP1 doesn't necessarily provide Internet access, but is used to grant network access on P4wnP1 via bluetooth. The alternative would be to establish a "Group Network (GN)" instead of NAP, which unfortunately didn't work in most test cases, when it cames to connection of a mobile device.
+      So if Internet should be provided from P4wnP1 via NAP (which isn't the purpose of P4wnP1), P4wnP1 itself has to be connected to Internet (for example using RNDIS + ICS on windows or using the WiFi client mode). Additionally iptables rules have to be deployed to enable MASQUERADING on the respective outbound interface.
 
 To summerize: P4wnP1 provides NAP as access option to SSH via bluetooth, not to serve Internet, although this could be achieved.
 
-### BLUETOOTH_NAP
+### **BLUETOOTH_NAP**
 Enable Bluetooth NAP to SSH in via Bluetooth
-### BLUETOOTH_NAP_PIN
+### **BLUETOOTH_NAP_PIN**
 unused, PIN authentication currently not working (custom agent for bluez 5 needed)
-### BLUETOOTH_NAP_IP
+### **BLUETOOTH_NAP_IP**
 IP used by P4wnP1
-### BLUETOOTH_NAP_NETMASK
+### **BLUETOOTH_NAP_NETMASK**
 Mandantory Netmask
-### BLUETOOTH_NAP_DHCP_RANGE
+### **BLUETOOTH_NAP_DHCP_RANGE**
 DHCP Server IP Range
 
 ***

@@ -18,7 +18,7 @@ This is called a [here-doc](http://tldp.org/LDP/abs/html/here-docs.html).
 `outhid`  
 Pipe ASCII into this command to output via HID keyboard on target.  
 The output keyboard layout is derived from the "lang" option (Keyboard config).  
-!!! info ""
+!!! info
     A newline character (ASCII 0x0A) is interpreted as RETURN key.  
     outhid only works if USE_HID=true.  
 
