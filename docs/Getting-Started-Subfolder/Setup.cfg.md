@@ -2,15 +2,20 @@
 
 **In this file, you can find extend documentation on every option in the setup.cfg file.**
 
+
 The setup.cfg is the first file that gets loaded on start of the P4wnP1 service.  
 The Payload gets loaded directly afterwards and **has the ability to override variables defined setup.cfg** (so if some features don't behave like they should, their settings are probably getting overridden by the payload)
+
 ***
+
 ## Gadgets
+
 ### USB_VID**
 **defines the USB-VendorID**  
 Can be any 4-digit hexadecimal number, but if you want the Pi to like a certain device, you can look up VIDs by name at [the-sz.com](http://www.the-sz.com/products/usbid/).  
 !!! info
     Mac OS only plug'n'plays Apple accessories. So you should change the VID to `0x05ac` if you plan on using the P4wnP1 only Apple devices.
+
 ### USB_PID
 **defines the USB-ProductID**  
 Can be any 4-digit hexadecimal number.  
