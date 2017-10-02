@@ -1,1 +1,1 @@
-site #mkdocs building dir
+site/* #mkdocs building dir
