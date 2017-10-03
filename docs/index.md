@@ -33,7 +33,7 @@ P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspber
 
 ### Communication
 
-![Diagramm](https://user-images.githubusercontent.com/13119970/30510901-d2ad38e6-9acd-11e7-8751-93f592de8d3f.jpg)
+![Diagramm](img/p4wnp1-backdoor-diagramm.jpg)
 
 ### Feature Comparison with BashBunny
 
