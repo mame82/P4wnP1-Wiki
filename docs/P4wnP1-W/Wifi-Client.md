@@ -13,7 +13,7 @@ The client setting can be configured in the `setup.cfg` in the P4wnP1 root direc
 * WIFI_CLIENT_STORE_NETWORK=false # currently unused
 * WIFI_CLIENT_OVERWRITE_PSK=true # currently unused
 
-**Note:**  
-Currently only supports WPA2 PSK networks. Enterprise networks might be difficult to debug if you dont have on so you have to write your own implementation. [related issue](https://github.com/mame82/P4wnP1/issues/106)
-Could slow down boot because the scan for the desired network is issued upfront and the DHCP client gets started and waits for a lease.  
-if [WIFI_ACCESSPOINT](Wifi-Hotspot.md) is set to true as well, P4wnP1 starts an Accesspoint if the target network was not found.
+???+ info
+      Currently only supports WPA2 PSK networks. Enterprise networks might be difficult to debug if you dont have on so you have to write your own implementation. [related issue](https://github.com/mame82/P4wnP1/issues/106)
+      Could slow down boot because the scan for the desired network is issued upfront and the DHCP client gets started and waits for a lease.  
+      if [WIFI_ACCESSPOINT](Wifi-Hotspot.md) is set to true as well, P4wnP1 starts an Accesspoint if the target network was not found.

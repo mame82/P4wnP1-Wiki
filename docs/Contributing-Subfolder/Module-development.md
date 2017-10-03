@@ -12,7 +12,8 @@ Available callbacks are (listed by their usual sequence of execution:
 3. onKeyboardUp (gets called when the target finished installing the driver)
 4. onLogin (gets called when somebody ssh's into P4wnP1)  
 
-**Note:** This order isn't guaranteed since some functions are run asynchronously.  
+!!! info
+    This order isn't guaranteed since some functions are run asynchronously.  
 
 ### Available utility functions:
 In addition to having the freedom of bash and 3rd party tools, P4wnP1 comes also in equipped with various functions to interface with its USB-Gadget abilities:
@@ -39,7 +40,8 @@ _(some of these are only available through the payload)_
   determines if wlan0 interface is present (can be used to check if the Pi has wireless capabilities)
 * `WIFI_CLIENT_CONNECTION_SUCCESS` _bool_  
   determines if connecting as a wifi client went successful  
-**Note:** These are supposed to be read-only and only accessible inside the callbacks since this might cause unexpected behavior in the boot process!
+!!! warning
+    These are supposed to be read-only and only accessible inside the callbacks since this might cause unexpected behavior in the boot process!
 * **Every setting in [setup.cfg](../Getting-Started/Setup.cfg.md)**
   these are supposed to be overridden **outside** the callback functions, not during the boot process
 

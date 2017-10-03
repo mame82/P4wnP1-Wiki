@@ -19,8 +19,9 @@ This repo uses the default github-webinterface characters for styling
 * `_text_` italic
 * `[display-name](page-name.md)` internal link
 
-**Note:** internal links use relative links instead of absolute.
-Use `../` to access the parent directory. So if you have this directory structure,
+!!! note
+    internal links use relative links instead of absolute.
+    Use `../` to access the parent directory. So if you have this directory structure,
 ```
 ├── Backdoor-Subfolder
 │   ├── Backdoor-Commands.md (the file you are editing)
@@ -31,6 +32,12 @@ Use `../` to access the parent directory. So if you have this directory structur
 └── Windows-10-Lockpicker.md (the file you want to link to)
 ```
 you use `[<text to display>](../Windows-10-Lockpicker.md)` to link to Windows-10-Lockpicker.md
+
+### Python-Markdown extensions
+This Wiki uses a couple of extensions supported by [material](https://squidfunk.github.io/mkdocs-material/):
+#### TOC
+If you add a new page to the Wiki, it will only show up in the sidebar if you add it in `mkdocs.yml` at the correct spot.
+
 
 ### youtube videos
 Since raw html in markdown documents is not recommended and filtered by some backends the prefered style is adding the thumbnail with the link to the video like so:

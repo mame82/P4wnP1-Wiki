@@ -1,7 +1,21 @@
 site_name: P4wnP1 Official Wiki
-repo_url: https://github.com/mame82/P4wnP1
-edit_uri: edit/master
-theme: readthedocs
+repo_url: https://github.com/mame82/P4wnP1/
+edit_uri: '../P4wnP1-Wiki/edit/master/docs/'
+theme_dir: 'mkdocs-material/material'
+
+markdown_extensions:
+  - admonition
+  - toc(permalink=true)
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.keys
+
+extra:
+  font:
+    code: 'monospace'
+
 
 pages:
 - Home: 'index.md'
