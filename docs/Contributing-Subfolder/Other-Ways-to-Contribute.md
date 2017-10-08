@@ -4,6 +4,7 @@
 There are several things that need to be done:
 * Proofreading of the entire Wiki for grammatical/informational errors. We are just humans like you. ;-)  
 * Since this list isn't the central ToDo list, you will find up-to-date Wiki todo list [here](../ToDo.md).
+* A logo/icon for P4wnP1. The currently proposed logos can be found [here](Logo-Suggestions.md).
 
 ## Styleguide
 This repo uses the default github-webinterface characters for styling

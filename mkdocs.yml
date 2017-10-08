@@ -3,6 +3,7 @@ repo_url: https://github.com/mame82/P4wnP1/
 edit_uri: '../P4wnP1-Wiki/edit/master/docs/'
 theme_dir: 'mkdocs-material/material'
 site_favicon: 'img/p4wnp1-logo.png'
+google_analytics: ['UA-71330457-1', 'p4wnp1.readthedocs.io']
 
 markdown_extensions:
   - admonition
