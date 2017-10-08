@@ -13,8 +13,9 @@
 * [ ] [Payload Home](Payload-Subfolder/Payload-Home.md)
 * [x] Convert notes to [Admonition](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 * [ ] add [InlineHilite](https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
-* [ ] PyMdown-Tasklist
+* [x] PyMdown-Tasklist
 * [ ] Add doc for pymdown-Extensions in [Other-ways-to-Contribute.md](Contributing-Subfolder/Other-ways-to-Contribute.md)
-* [ ] add doc on testing the wiki locally via mkdocs.
+* [x] add doc on testing the wiki locally via mkdocs.
 * [ ] fix header formatting in FAQ.md
-* [ ] fix line break in Contributing-Home.md
+* [x] fix line break in Contributing-Home.md
+* [x] add logo suggestions page
