@@ -2,12 +2,14 @@
 
 **Even if you are not a developer or very familiar with P4wnP1, you can still contribute to the progress of the project**  
 There are several things that need to be done:
+
 * Proofreading of the entire Wiki for grammatical/informational errors. We are just humans like you. ;-)  
 * Since this list isn't the central ToDo list, you will find up-to-date Wiki todo list [here](../ToDo.md).
 * A logo/icon for P4wnP1. The currently proposed logos can be found [here](Logo-Suggestions.md).
 
 ## Styleguide
 This repo uses the default github-webinterface characters for styling
+
 * \`[code]\` singleline code
 * \`\`\`[multiline code]\`\`\` multiline code
 * `*` unordered lists

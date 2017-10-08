@@ -46,4 +46,5 @@ pages:
     - Contributing: 'Contributing-Subfolder/Contributing-Home.md'
     - 'Payload Development': 'Contributing-Subfolder/Module-development.md'
     - 'Other ways to Contribute': 'Contributing-Subfolder/Other-Ways-to-Contribute.md'
+    - 'Logo Suggestions': 'Contributing-Subfolder/Logo-Suggestions.md'
 - 'Wiki TODO list': 'ToDo.md'
