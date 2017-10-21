@@ -11,21 +11,21 @@ P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspber
 
 ### P4wnP1 Features
 
-* **HID covert channel [Frontdoor](Payload-Subfolder/Frontdoor-Payload.md)/[Backdoor](Payload-Subfolder/Backdoor-Payload.md)** | Get remote shell access to Windows targets via HID devices)
+* **HID covert channel [Frontdoor](Payload-Subfolder/Frontdoor-Payload.md)/[Backdoor](Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md)** | Get remote shell access to Windows targets via HID devices)
 * **[Windows 10 Lockpicker](Payload-Subfolder/Windows-10-Lockpicker.md)** | Unlock Windows boxes with weak passwords (fully automated)
 * **[Stealing Browser Credentials](Payload-Subfolder/Stealing-Browser-Credentials.md)** | Dumps stored Browser Credentials and copys them to the builtin flashdrive
 * **[WiFi Hotspot](P4wnP1-W/Wifi-Hotspot.md)** | SSH access (Pi Zero W only), supports hidden ESSID
 * **[Client Mode](P4wnP1-W/Wifi-Client.md)** | Relays USB net attacks over WiFi with internet access (MitM)
 * **[USB device](Refrence??????????)** | Works with Windows Plug and Play support
 	* Device Types:
-	* **HID covert channel communication device** | [Frontdoor](Payload-Subfolder/Frontdoor-Payload.md)/[Backdoor](Payload-Subfolder/Backdoor-Payload.md)
+	* **HID covert channel communication device** | [Frontdoor](Payload-Subfolder/Frontdoor-Payload.md)/[Backdoor](Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md)
 	* **[HID Keyboard/Mouse](Advanced-Features.md#Advanced-HID-Features)**
 	* **[USB Mass storage](Advanced-Features.md)** | Currently only in demo setup with 128 Megabyte drive
 	* **[RNDIS](Advanced-Features.md#Advanced-Network-Features)** | Windows Networking
 	* **[CDC ECM](Advanced-Features.md)** | MacOS / Linux Networking
-* **[Bash based payload scripts](Contributing/Module-development.md)** | See `payloads/` subfolder for examples example
+* **[Bash based payload scripts](Contributing-Subfolder/Module-development.md)** | See `payloads/` subfolder for examples example
 * **[Responder](Payload-Subfolder/Windows-10-Lockpicker.md#attack-chain-short-summary)**
-* **[John the Ripper Jumbo](Windows-10-Lockpicker.md#attack-chain-short-summary)** | Pre-compiled version ready to go
+* **[John the Ripper Jumbo](Payload-Subfolder/Windows-10-Lockpicker.md#attack-chain-short-summary)** | Pre-compiled version ready to go
 * **[AutoSSH integration](P4wnP1-W/AutoSSH.md)** | For easy reverse ssh tunnels
 * **[Auto attack](Refrence)** | P4wnP1 automatically boots to standard shell if an OTG adapter is attached
 * **[LED state feedback](Refrence)** | with a simple bash command (`led_blink`)

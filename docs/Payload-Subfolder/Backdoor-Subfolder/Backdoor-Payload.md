@@ -74,7 +74,7 @@ The video is produced by @Seytonic, you should check out his youtube channel wit
 6. To fire up the covert channel HID backdoor, issue the command `FireStage1`
 7. After the target connected back, enter `shell` to create a remote shell through the covert channel
 
-**Detailed explanation of every command can be found in [Backdoor Commands](Payload-Subfolder/Backdoor-Payload/Backdoor-Commands.md)**
+**Detailed explanation of every command can be found in [Backdoor Commands](Backdoor-Commands.md)**
 
 # Currently missing features
 
