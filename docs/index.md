@@ -5,7 +5,7 @@
 _This wiki is a HUGE work in progress just like the P4wnP1 project itself. The info here comes from FAQ.md, README.md, and many issues in the original project. Keep in mind this block of text won't be here forever (hopefully)._
 ***
 # About P4wnP1
-
+![P4wnP1LogoV2](img/P4wnP1LogoSVGidealCropWhite.svg)
 ### Introduction
 P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W. Since the initial release in February 2017, P4wnP1 has come along way. A lot of the time has been spent troubleshooting new features and bugs in the old.
 
