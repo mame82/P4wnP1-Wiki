@@ -19,3 +19,4 @@
 * [ ] fix header formatting in FAQ.md
 * [x] fix line break in Contributing-Home.md
 * [x] add logo suggestions page
+* [x] Windows 10 Lockpicker writeup

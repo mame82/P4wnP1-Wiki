@@ -31,7 +31,9 @@ pages:
     - Payload: 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md'
     - 'Commandline Interface': 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Commands.md'
   - Frontdoor: 'Payload-Subfolder/Frontdoor-Payload.md'
-  - 'Windows 10 Lockpicker': 'Payload-Subfolder/Windows-10-Lockpicker.md'
+  - Windows 10 Lockpicker:
+    - Payload: 'Payload-Subfolder/Windows-10-Lockpicker-Subfolder/Windows-10-Lockpicker.md'
+    - Technical Writeup: 'Payload-Subfolder/Windows-10-Lockpicker-Subfolder/writeup_lockpicker.md'
   - 'Stealing Browser Credentials': 'Payload-Subfolder/Stealing-Browser-Credentials.md'
 - 'OS Independent features': 'OS-independent-features-Subfolder/OS-independent-features-Home.md'
 - 'P4wnP1 W exclusive features':
