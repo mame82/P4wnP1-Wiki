@@ -30,6 +30,7 @@ pages:
   - Backdoor:
     - Payload: 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Payload.md'
     - 'Commandline Interface': 'Payload-Subfolder/Backdoor-Subfolder/Backdoor-Commands.md'
+  - 'Wifi Covert Channel': 'Payload-Subfolder/Wifi-Covert-Channel.md'
   - Frontdoor: 'Payload-Subfolder/Frontdoor-Payload.md'
   - Windows 10 Lockpicker:
     - Payload: 'Payload-Subfolder/Windows-10-Lockpicker-Subfolder/Windows-10-Lockpicker.md'
@@ -42,6 +43,7 @@ pages:
   - 'Wifi Client': 'P4wnP1-W/Wifi-Client.md'
   - 'Bluetooth': 'P4wnP1-W/Bluetooth-Connectivity.md'
   - 'Reverse SSH tunnel': 'P4wnP1-W/AutoSSH.md'
+  - 'Wifi Covert Channel': 'Payload-Subfolder/Wifi-Covert-Channel.md'
 - Troubleshooting: 'Troubleshooting.md'
 - 'Advanced Features': 'Advanced-Features.md'
 - Contributing:

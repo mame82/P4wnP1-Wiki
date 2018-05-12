@@ -21,3 +21,4 @@
 * [x] add logo suggestions page
 * [x] Windows 10 Lockpicker writeup
 * [ ] Implement mkdocs-material as submodule
+* [ ] Doc on new wifi features (half done)

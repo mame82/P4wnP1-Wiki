@@ -78,7 +78,6 @@ SumUp: BashBunny is directed to easy usage, but costs 20 times as much as the ba
   [Dan the IOT Man]: https://dantheiotman.com/2017/09/15/p4wnp1-the-pi-zero-based-usb-attack-platform/
 
 ### Credits to
-
 -    [Seytonic](https://www.youtube.com/channel/UCW6xlqxSY3gGur4PkGPEUeA), youtube channel on hacking and hardware projects
 -    Rogan Dawes, Sensepost, core developer of Universal Serial Abuse - [USaBUSe](https://github.com/sensepost/USaBUSe)
 -    Samy Kamkar, [PoisonTap](https://github.com/samyk/poisontap)
