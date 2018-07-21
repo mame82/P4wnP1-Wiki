@@ -20,14 +20,15 @@ Several methods are existing to do this
  - Method 1: Attaching an USB hub along with a Network Interface (NIC) and use it to connect to the Internet
  - Method 2: Put the SD card into another Raspberry Pi with built-in NIC and connect to the Internet (for example a Pi 3)
  - Method 3: This is the preferred one, as no additional hardware should be needed. Configure the Raspberry Pi **Zero** to act as USB Ethernet adapter and connect back to Internet through your host (Internet Connection Sharing on Windows, iptables MASQUERADING rule on Linux).
- - Method 4: How I do it currently (see `"Getting headless Pi Zero online"`)
+ - Method 4: How I do it currently (see `"Method 4: Getting headless Pi Zero online"`)
+ - Method 5: Configuring the SD card before first boot (see `"Method 5: Configure SD card before boot"`)
 
 A guide on how to do method 3 could be found [here](http://www.circuitbasics.com/raspberry-pi-zero-ethernet-gadget/). Two things should be noted on method 3:
 
 1. Most Raspberry Pi Zero USB gadget configurations interfere with the configuration of P4wnP1 (which for example doesn't use "g_ether"). The setup script of P4wnP1 tries to fix interfering configurations. If you encouter problems, please try another method to connect to Internet and revert the changes done to the bare RASPBIAN JESSIE/STRETCH image.
 2. Unlike described in most tutorials (including the linked one), the SSH server on current Raspbian isn't running by default. You have to boot up the Pi into interactive mode and run `sudo update-rc.d ssh enable` (avoid manual changes to `/etc/rc2.d/`, most times this messes things up).
 
-### Getting headless Pi Zero Online (my way, needs a micro USB cable + SD card reader + KALI Linux)
+### Method 4: Getting headless Pi Zero Online (my way, needs a micro USB cable + SD card reader + KALI Linux)
 
 I'm doing this on Kali Linux, most other distros should be fine, too (I'm working as root user on Kali, so depending on the distribution you need to add `sudo` or change too root, in order to run privileged commands). I don't use Windows 10 anymore, because the default USB over Ethernet driver gets detected as "USB Serial device", which is hard to overcome.
 1. Prepare a fresh Raspbian Lite SD card
@@ -68,6 +69,27 @@ The last thing to do is to tell the Pi, how to resolve DNS names, with:
 18. The Pi should be online and able to resolve DNS names, test with `ping www.google.de`
 
 If you made it till here, your're ready to go on with P4wnP1 installation.
+
+### Method 5: Configure SD card before boot
+This method uses a Raspbian feature which overwrites `/etc/wpa_supplicant.conf` if a configuration file is placed in the `/boot/` file.
+1. After writing the Raspbian Lite image to the SD card, mount the SD card on your computer.
+2. Using a text editor program, create a file called `wpa_supplicant.conf` and save it to the root directory of the `boot` partition. Copy the following code to the file, editing `SSID` and `PASSWORD` with your values. Note that you may also have to edit `country=US` with your own ISO country code.
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+    ssid="SSID"
+    psk="PASSWORD"
+    key_mgmt=WPA-PSK
+}
+```
+
+3. Create an empty file called `SSH` (nothing in the file and no file extension) and place it in the `boot` parition to enable SSH on the Pi.
+4. Move your SD card over to the Pi and boot it. It should connect to the WiFi network defined in `wpa_supplicant.conf`.
+
 
 ### Login to Pi Zero online
 
