@@ -73,7 +73,7 @@ If you made it till here, your're ready to go on with P4wnP1 installation.
 ### Method 5: Configure SD card before boot
 This method uses a Raspbian feature which overwrites `/etc/wpa_supplicant.conf` if a configuration file is placed in the `/boot/` file.
 1. After writing the Raspbian Lite image to the SD card, mount the SD card on your computer.
-2. Using a text editor program, create a file called `wpa_supplicant.conf` and save it to the root directory of the `boot` partition. Copy the following code to the file, editing `SSID` and `PASSWORD` with your values. Note that you may also have to edit `country=US` with your own ISO country code.
+2. Using a text editor program (I recommend nano since it is the easiest to use), create a file called `wpa_supplicant.conf` and save it to the root directory of the `boot` partition. Copy the following code to the file, editing `SSID` and `PASSWORD` with your values. Note that you may also have to edit `country=US` with your own ISO country code.
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -87,7 +87,7 @@ network={
 }
 ```
 
-3. Create an empty file called `SSH` (nothing in the file and no file extension) and place it in the `boot` parition to enable SSH on the Pi.
+3. Create an empty file called `SSH` (nothing in the file and no file extension) and place it in the `boot` parition to enable SSH on the Pi. This can be easily done via `touch SSH`.
 4. Move your SD card over to the Pi and boot it. It should connect to the WiFi network defined in `wpa_supplicant.conf`.
 
 
