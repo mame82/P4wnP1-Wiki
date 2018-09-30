@@ -1,24 +1,38 @@
-site_name: P4wnP1 Official Wiki
-repo_url: https://github.com/mame82/P4wnP1/
+site_name: 'P4wnP1 Official Wiki'
+site_author: 'Swiftb0y'
+repo_url: 'https://github.com/mame82/P4wnP1/'
 edit_uri: '../P4wnP1-Wiki/edit/master/docs/'
-theme_dir: 'mkdocs-material/material'
-site_favicon: 'img/logo_P4wnP1_favicon.svg'
-google_analytics: ['UA-71330457-1', 'p4wnp1.readthedocs.io']
+#site_favicon: 'img/logo_P4wnP1_favicon.svg'
 
 markdown_extensions:
   - admonition
-  - toc(permalink=true)
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.tasklist
   - pymdownx.keys
+  - toc:
+      permalink: True
+
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  logo: 'img/logo_P4wnP1_favicon.svg'
+  language: 'en'
 
 extra:
   font:
     code: 'monospace'
+  social:
+    - type: 'github'
+      link: 'https://github.com/mame82'
+    - type: 'twitter'
+      link: 'https://twitter.com/P4wnP1'
 
-pages:
+nav:
 - Home: 'index.md'
 - FAQ: 'FAQ.md'
 - Getting Started:
