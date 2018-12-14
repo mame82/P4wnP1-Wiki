@@ -1,0 +1,147 @@
+Directory Structure:
+- Overview
+- Quickstart
+  - How to install
+  - Templates
+  - Master Template
+- USB Features
+- WebClient
+- Wireless
+  - WiFi
+    - AP
+    - client
+    - Nexmon KARMA
+    - Covert Channel
+  - Bluetooth
+    - PAN
+    - NAP
+    - PANU (unsupported)
+- Scripting
+  - HIDScript
+    - Tutorials
+    - Command Reference
+  - P4wnP1  CLI
+    - Quickstart
+    - Command Reference
+  - Web UI
+    - TriggerActions
+     - Deploying Templates
+     - Tutorials
+     - Reference
+  - Bash
+- Contributing
+  - P4wnP1 A.L.O.A
+    - Tool Architecture
+    - Core Architecture
+    - Web UI Architecture
+  - Wiki
+  - ToDo
+- FAQ
+- Troubleshooting
+- Credits
+
+Contents:
+- Overview:
+  - Link to Legacy Docs!
+  - comparision Table RubberDucky, BashBunny, P4wnP1 (legacy), P4wnP1 A.L.O.A, (mby WHID Injector?)
+- How to Install:
+  - Prebuilt Kali image
+  - Upgrading
+  - Link to Troubleshooting
+- USB Features:
+  - Explanation of USB features, use case, etc.
+- WebClient:
+  - Basic Overview (mby backstory)
+  - Used Frameworks and credit
+  - Simple Explanation and links to detailed explanations
+- Wireless:
+  - Overview of wireless features
+- Wifi:
+  - Overview/definitions of wifi features
+- AP:
+  - Detailed configuration possibilities (with screenshots)
+  - Mention of Unicode support etc.
+- Client:
+  - Detailed configuration possibilities (with screenshots)
+  - Explanation of failover mode
+- Nexmon KARMA
+  - Not yet core part
+  - explanation of python tool
+  - Link to Development Twitter Threads
+- Wifi Covert Channel:
+  - Basic Overview
+  - not ported yet
+  - link to technical writeup
+- Bluetooth:
+  - Compatibility overview
+  - Quick definitions of sub categories
+- PAN:
+  - General Explanation
+  - How to Use/Set up
+- NAP:
+  - General Explanation
+  - How to Use/Set up
+- PANU:
+  - not supported
+- Scripting:
+  - List scripting possibilities
+- HIDScript:
+  - Overview
+  - Link to JS learning materials
+- HIDSCript/Tutorials
+  - Copy Tutorials from README.md
+  - Link to various Approved Blogs
+- HIDSCript/Command Reference
+  - Mby Read Source Code
+- P4wnP1 CLI
+  - About RPC
+  - Compiling on different Platforms
+- P4wnP1 CLI/Quickstart
+  - Quick explanation
+- P4wnP1 CLI/Command Reference
+  - Detailed Reference
+- Web UI
+  - How Templates and TriggerActions work in Tandem
+  - Why This Concept
+- Web UI/Templates
+  - How to Use Different templates
+- Web UI/TriggerAction
+  - Types of Triggeractions
+- Web UI/TriggerAction/Tutorials
+  - Tutorials from Main Readme
+- Web UI/TriggerAction/Reference
+  - Detailed Reference of every TriggerActions and parameters
+- Bash
+  - Getting started with Bash scripts (collection for learning materials and detailed explanation of example scripts)
+  - Integrating P4wnP1 CLI output into bash.
+- Contributing
+  - General Rules for Contributing
+- Contributing/P4wnP1 A.O.L.A
+  - Setting up a Development Env
+  - Release Schedule
+- Contributing/P4wnP1 A.L.O.A/Tool Architecture
+  - How the different Tools work together CLI, UI, etc. from a User perspective
+    - Mby line diagramm?
+- Contributing/P4wnP1 A.L.O.A/Core Architecture
+  - How the Go components work together from a devs/source perspective
+- Contributing/P4wnP1 A.L.O.A/Web UI Architecture
+  - How the different Frameworks and the core work together
+- Contributing/Wiki
+  - Translating
+  - Proofreading
+  - Contact me
+- Contributing/ToDo
+  - ToDo for Wiki AND Main repo
+- FAQ
+  - Placeholder, Will be filled as the community grows
+- Troubleshooting
+  - Conclusions from GitHub Issues
+- Credits
+  - taken from README.md
+
+
+
+Questions (legacy features):
+- AutoSSH
+- DuckyScipt Compatibility
+- USB OTG behavior
