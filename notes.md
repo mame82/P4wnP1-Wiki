@@ -1,9 +1,6 @@
 Directory Structure:
 - Overview
 - Quickstart
-  - How to install
-  - Templates
-  - Master Template
 - USB Features
 - WebClient
 - Wireless
@@ -25,7 +22,8 @@ Directory Structure:
     - Command Reference
   - Web UI
     - TriggerActions
-     - Deploying Templates
+     - Templates
+     - Master Template
      - Tutorials
      - Reference
   - Bash
@@ -145,3 +143,5 @@ Questions (legacy features):
 - AutoSSH
 - DuckyScipt Compatibility
 - USB OTG behavior
+- Interaction via Serial connection
+- 20Gb/s RNDIS Spoof

@@ -35,10 +35,7 @@ theme:
 
 nav:
 - Overview: 'Index.md'
-- Quickstart: 'Quickstart/Index.md'
-  - How to install: 'Quickstart/How-to-Install.md'
-  - Templates: 'Quickstart/Templates.md'
-  - Master Template: 'Quickstart/Master-Templates.md'
+- Quickstart: 'Quickstart.md'
 - USB Features: 'USB-Features.md'
 - Web-UI: 'Web-UI.md'
 - Wireless: 'Wireless/Index.md'
