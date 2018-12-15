@@ -1,6 +1,6 @@
 site_name: 'P4wnP1 Official Wiki'
 site_author: 'Swiftb0y'
-repo_url: 'https://github.com/mame82/P4wnP1/'
+repo_url: 'https://github.com/mame82/P4wnP1_aloa/'
 edit_uri: '../P4wnP1-Wiki/edit/master/docs/'
 #site_favicon: 'img/logo_P4wnP1_favicon.svg'
 
@@ -34,35 +34,47 @@ theme:
       link: 'https://twitter.com/P4wnP1'
 
 nav:
-- Overview: 'Index.md'
+- Overview: 'index.md'
 - Quickstart: 'Quickstart.md'
-- USB Features: 'USB-Features.md'
-- Web-UI: 'Web-UI.md'
-- Wireless: 'Wireless/Index.md'
-  - WiFi: 'Wireless/WiFi/Index.md'
+- 'USB Features': 'USB-Features.md'
+- 'Web UI': 'Web-UI.md'
+- Wireless:
+  - Overview: 'Wireless/Overview.md'
+  - WiFi:
+    - Overview: 'Wireless/WiFi/Overview.md'
     - AP: 'Wireless/WiFi/AP.md'
     - Client: 'Wireless/WiFi/Client.md'
     - Nexmon KARMA: 'Wireless/WiFi/Nexmon-KARMA.md'
     - Covert Channel: 'Wireless/WiFi/Covert-Channel.md'
-  - Bluetooth: 'Wireless/Bluetooth/Index.md'
+  - Bluetooth:
+    - Overview: 'Wireless/Bluetooth/Overview.md'
     - PAN: 'Wireless/Bluetooth/PAN.md'
     - NAP: 'Wireless/Bluetooth/NAP.md'
     - PANU: 'Wireless/Bluetooth/PANU.md'
-- Scripting: 'Scripting/Index.md'
-  - HIDScript: 'Scripting/HIDScript/Index.md'
+- Scripting:
+  - Overview: 'Scripting/Overview.md'
+  - HIDScript:
+    - Overview: 'Scripting/HIDScript/Overview.md'
     - Tutorials: 'Scripting/HIDScript/Tutorials.md'
-    - Command Reference: 'Scripting/HIDScript/Command-Reference.md'
-  - P4wnP1 CLI: 'Scripting/P4wnP1-CLI/Index.md'
+    - 'Command Reference': 'Scripting/HIDScript/Command-Reference.md'
+  - 'P4wnP1 CLI':
+    - Overview: 'Scripting/P4wnP1-CLI/Overview.md'
     - Quickstart: 'Scripting/P4wnP1-CLI/Quickstart.md'
-    - Command Reference: 'Scripting/P4wnP1-CLI/Command-Reference.md'
-  - Web UI: 'Scripting/Web-UI/Index.md'
-    - TriggerActions: 'Scripting/Web-UI/Index.md'
-     - Deploying Templates: 'Scripting/Web-UI/Deploying-Templates.md'
-     - Tutorials: 'Scripting/Web-UI/Tutorials.md'
-     - Reference: 'Scripting/Web-UI/Reference.md'
-  - Bash: 'Scripting/Bash.md'
-- Contributing: 'Contributing/Index.md'
-  - P4wnP1 A.L.O.A: 'Contributing/P4wnP1-ALOA/Index.md'
+    - 'Command Reference': 'Scripting/P4wnP1-CLI/Command-Reference.md'
+    - Bash: 'Scripting/P4wnP1-CLI/Bash.md'
+  - 'Web UI':
+    - Overview: 'Scripting/Web-UI/Overview.md'
+    - TriggerActions:
+      - Overview: 'Scripting/Web-UI/TriggerActions/Overview.md'
+      - Tempates: 'Scripting/Web-UI/TriggerActions/Templates.md'
+      - 'Master Templates': Scripting/Web-UI/TriggerActions/Master-Templates.md
+      - Tutorials: 'Scripting/Web-UI/TriggerActions/Tutorials.md'
+      - Reference: 'Scripting/Web-UI/TriggerActions/Reference.md'
+      - Templates: 'Scripting/Web-UI/TriggerActions/Deploying-Templates.md'
+- Contributing:
+  - Guidelines: 'Contributing/Guidelines.md'
+  - P4wnP1 A.L.O.A:
+    - Overview: 'Contributing/P4wnP1-ALOA/Overview.md'
     - Tool Architecture: 'Contributing/P4wnP1-ALOA/Tool-Architecture.md'
     - Core Architecture: 'Contributing/P4wnP1-ALOA/Core-Architecture.md'
     - Web UI Architecture: 'Contributing/P4wnP1-ALOA/Web-UI-Architecture.md'
