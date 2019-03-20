@@ -12,7 +12,7 @@ The Payload gets loaded directly afterwards and **has the ability to override va
 
 ### USB_VID
 **defines the USB-VendorID**  
-Can be any 4-digit hexadecimal number, but if you want the Pi to like a certain device, you can look up VIDs by name at [the-sz.com](http://www.the-sz.com/products/usbid/).  
+Can be any 4-digit hexadecimal number, but if you want the Pi to look like a certain device, you can look up VIDs by name at [the-sz.com](http://www.the-sz.com/products/usbid/).  
 
 !!! info
     Mac OS only plug'n'plays Apple accessories. So you should change the VID to `0x05ac` if you plan on using the P4wnP1 only Apple devices.
